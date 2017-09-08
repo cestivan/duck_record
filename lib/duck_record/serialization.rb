@@ -12,6 +12,7 @@ module DuckRecord #:nodoc:
       options = options.try(:dup) || {}
 
       options[:except] = Array(options[:except]).map(&:to_s)
+      options[:except] |= Array(self.class.inheritance_column)
 
       super(options)
     end

@@ -38,6 +38,7 @@ module DuckRecord
       autoload :Dirty
       autoload :Read
       autoload :Write
+      autoload :Serialization
     end
   end
 
